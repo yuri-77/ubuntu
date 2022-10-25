@@ -1,0 +1,18 @@
+#!bin/bash
+
+count=0
+simpleNumbers () {
+	for i in {1..$number}
+	do
+		if [[ ${number}%${i}==0 ]]; then
+			count=count+1
+		fi
+	done
+	if [[ ${count}==2 ]]; then
+		echo "Your number is simple"
+	else
+		echo "Your number isn't simple"
+	fi
+}
+
+simpleNumbers $1

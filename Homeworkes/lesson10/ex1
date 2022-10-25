@@ -1,0 +1,17 @@
+#!/bin/bash
+address=$(ip add)
+echo "Address detalis are: ${address}"
+
+time=$(uptime)
+echo "Time detalis are: ${time}"
+
+last=$(lastlog)
+echo "Last login detalis are: ${last}"
+
+size=$(df -h)
+echo "Disk Space Utililzation detalis are ${size}"
+
+memory=$(free -m)
+echo "Memory detalis are: ${memory}"
+
+#crontab-i mej el grel em * */1 * * *
